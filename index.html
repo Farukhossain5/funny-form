@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event js</title>
+</head>
+<body>
+    <h1 >Dom er ajke speacial events</h1>
+    <button title="this is title set by js" onclick="console.log(5)">click Me</button>
+    <button onclick="console.log(55)"> another button</button>
+    <button onclick="document.body.style.backgroundColor='yellow'">make yellow</button>
+    <button onclick="makeBlue()">make blue</button>
+    <button id="make-pink">Make Pink</button>
+    <button onclick="makeRed()">make Red</button>
+    <button id="make-green">Make Green</button>
+    <button id="make-golden-rod">Make GoldenRod</button>
+    <script src="js/ivent.js"></script>
+    <script>
+    document.getElementById('make-golden-rod').addEventListener('click',function(){
+        document.body.style.backgroundColor='goldenrod';
+    });
+    </script>
+</body>
+</html>
